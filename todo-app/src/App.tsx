@@ -2,7 +2,7 @@ import React, {useState } from 'react'
 import './App.css'
 import { TodoTypes } from './types/Todo'
 import AddTodo from "./components/AddTodo"
-import TodoList from "./components/TodoLists"
+import TodoLists from "./components/TodoLists"
 
 const App:React.FC =()=>{
   const [todos,setTodos]=useState<TodoTypes[]>([])
@@ -29,7 +29,7 @@ setTodos((prevTodos)=>prevTodos.filter((todo)=>todo.id!==id))
     <div className='App'>
      <h1>Todo App</h1>
      <AddTodo addTodo={addTodo}/>
-     <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
+     <TodoLists todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
     </div>
   )
 }
