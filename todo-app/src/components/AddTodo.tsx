@@ -14,7 +14,7 @@ const AddTodo:React.FC<Props> = ({addTodo}) => {
         }
     }
   return (
-    <div>
+    <div className='AddTodo'>
         <input type="text" value={text} onChange={(e)=>setText(e.target.value)} />
         <button onClick={handleAddTodo}>Add</button>
     </div>

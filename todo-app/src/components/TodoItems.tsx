@@ -8,7 +8,7 @@ interface Props{
 }
 const TodoItems:React.FC<Props> = ({todo,toggleTodo,deleteTodo}) => {
   return (
-    <div>
+    <div className='TodoItem'>
         <input type="checkbox" checked={todo.completed} onChange={()=>toggleTodo(todo.id)} />
         <span style={{textDecoration:todo.completed?"line-through":"none"}}>{
             todo.text
