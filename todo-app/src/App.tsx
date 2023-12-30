@@ -26,7 +26,7 @@ setTodos((prevTodos)=>prevTodos.filter((todo)=>todo.id!==id))
 }
 
   return (
-    <div className='App '>
+    <div className='App'>
      <h1>Todo App</h1>
      <AddTodo addTodo={addTodo}/>
      <TodoLists todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
