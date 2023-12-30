@@ -57,5 +57,4 @@ A simple Todo application built with TypeScript and React.
 - Delete a task by clicking the "Delete" button.
 
 ## Contributing
-
 If you'd like to contribute, please fork the repository and create a pull request. Feedback and suggestions are also welcome!
